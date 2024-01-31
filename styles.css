@@ -1,0 +1,1274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    border: borde-box;
+}
+
+/* .body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+.nav-bar{
+    height: 3rem;
+    max-width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    /* margin-right: 10rem; */
+    /* margin-left: -6rem; */
+    color: black;
+}
+.villa{
+    /* border: 2px solid black; */
+    font-weight: 700;
+}
+
+.navBox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactLogo{
+    height: 1.5rem;
+    width: 1.5rem;
+    /* position: relative; */
+    /* left: 1.5rem; */
+    margin-right: -3.5rem;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(14, 61, 192);
+}
+
+.search1{
+    height: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.837);
+    color: white;
+    border-radius: 25px;
+    padding-left: 2rem;
+    margin-left: 2rem;
+}
+
+.dropDown{
+    width: 12em;
+    height: 2em;
+    position: relative;
+    margin: 2em;
+    display: none;
+}
+
+/* .dropDown *{
+    box-sizing: border-box;
+} */
+
+.select{
+    height: 0.1em;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.7em;
+    padding: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.select-clicked{
+    /* border: 2px rgba(255, 166, 0, 0.774) solid; */
+    box-shadow: 0 0 0.8em #2a2d35;
+
+}
+
+.select:hover{
+    background: orange;
+    border: orange;
+}
+
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+
+.caret-rotate
+{
+    transform: rotate(180deg);
+}
+
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363843 solid;
+    box-shadow: 0 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background: #2a2d35;
+}
+
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+
+.active{
+    background: orange;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* aditional tags */
+
+.siz{
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+}
+
+.col-change{
+    color: rgb(204, 9, 9);
+}
+
+.bold1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    color: orange;
+    transition: ease-in-out 0.5s;
+}
+
+.border2{
+    border: 2px solid transparent;
+}
+
+.border2:hover{
+    border: 2px solid orange;
+}
+
+.sun{
+    color: black;
+}
+
+.sun:hover{
+    color: orange;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: cngCol;
+    /* animation-delay: 1s; */
+    animation-duration: 2s;
+}
+
+@keyframes cngCol{
+    from{color: black;}
+    to{color: orange;}
+}
+
+
+.sun2{
+    color: orange;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: cngCol2;
+    /* animation-delay: 1s; */
+    animation-duration: 5s;
+}
+
+@keyframes cngCol2{
+    from{color: white}
+    to{color: orange;}
+}
+
+.boxShad{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.siz-col{
+    font-weight: 900;
+    color: rgb(177, 0, 0);
+}
+
+
+.aniBorder1{
+    height: 1.7rem;
+    width: 90px;
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aniBorder1:hover{
+    background-color: orange;
+    color: black;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition: ease-in-out 0.5s;
+}
+
+.getW{
+    color: white;
+}
+
+.shade{
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.hero-section{
+    background-image: url("images/banner-01.jpg");
+    background-size: cover;
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-msg {
+    background-color: white;
+    height: 1.1rem;
+    width: 6rem;
+    border-radius: 2px;
+    font-size: 0.7rem;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    margin-right: 10rem;
+
+    /* margin-right: 30rem; */
+    /* margin-top: 6rem; */
+
+
+}
+
+.hero-msg2 {
+    color: white;
+    padding: 0;
+    /* margin-top: -2rem; */
+    /* margin-right: 20rem; */
+}
+
+.banner2{ /*---------------------------------------------------banner 2 ------------------------------------------/*
+    /* background-image: url(banner-02.jpg); */
+    /* background-size: cover; */
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.imgBox1{
+    height: 26em;
+    width: 19em;
+    background-image: url("images/featured.jpg");
+    background-size: cover;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.imgBox2{
+    height: 6em;
+    width: 6em;
+    /* background-image: url("featured-icon.png"); */
+    /* background-size: inherit; */
+    /* background-repeat: no-repeat; */
+    background-color: rgb(228, 71, 9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 370px;
+    left: -40px;
+}
+
+.banner2-box{
+    height: 30em;
+    width: 15em;
+    /* border: 2px solid black; */
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px 0px 0px 20px;
+}
+
+.banner2-box p{
+    font-size: small;
+    color: rgb(162, 162, 162);
+}
+
+.boxBox1{
+    height: 6em;
+    width: 11.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.boxBox2{
+    height: 6em;
+    width: 11em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.boxBox3{
+    height: 6em;
+    width: 10em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.boxBox4{
+    height: 6em;
+    width: 9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.blog1{
+    background-color: aliceblue;
+    height: 15rem;
+    display: flex;
+    flex-flow: column wrap;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    padding: 0 10px 0 10px;
+}
+
+.midText{
+    height: 31.25rem;
+    width: 18.75rem;
+    /* margin-top: 5rem;
+    margin-left: -9rem; */
+}
+
+
+/* banner 3-------------------------------------------------------------------------------------------------------- */
+
+.banner3{
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    /* background-color: blue; */
+}
+
+.banner3-box1{
+    height: 30rem;
+    width: 100%;
+    /* background-color: aqua; */
+    /* z-index: -1; */
+}
+
+.banner3-box2{
+    height: 25rem;
+    width: 100%;
+    /* background-color: black; */
+}
+
+.video-bg{
+    height: 900px;
+    width: 90%;
+    /* background-color: blue; */
+    position: absolute;
+    bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* z-index: 1; */
+}
+
+.video-text1{
+    height: 20rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.actualVid{
+    min-height: 400px;
+    width: 90%;
+    background-color: red;
+    background-image: url("images/video-frame.jpg");
+    background-size: cover;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.afterText{
+    height: 25rem;
+    width: 80%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.playKey{
+    height: 8.5rem;
+    width: 13.125rem;
+    z-index: 2;
+}
+
+.playShadow{
+    border: 50px solid rgba(255, 0, 0, 0.341);
+    /* background-color: rgb(0, 0, 0); */
+    border-radius: 50%;
+    position: absolute;
+}
+
+.txt{
+    width: 10rem;
+    height: 4rem;
+    background-color: rgba(255, 107, 107, 0.281);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin: 3px;
+}
+
+.circle{
+    height: 2.1875rem;
+    width: 2.1875rem;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+
+    position: absolute;
+    left: 140px;
+    bottom: 45px;
+
+    /* margin-bottom: 4rem; */
+    /* margin-left: 3rem; */
+}
+
+.banner4{
+    height: 900px;
+    background-color: rgba(156, 156, 156, 0.144); /*here is the banner 4 ----------------------------------------------------*/
+}
+
+.ban4Heading{
+    padding-top: 60px;
+    margin-left: 30px;
+}
+
+.ban4Div2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin: 0 30px;
+}
+
+.ban4Div3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner4Box1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    padding-right: 70px;
+}
+
+.banner4Box1 p{
+    margin-right: 10px;
+}
+
+.banDivBox1{
+    height: 400px;
+    width: 20%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banDivBox1 pre{
+    font-size: 0.85rem;
+}
+
+.ban4ImgBox{
+    height: 380px;
+    width: 33%;
+}
+
+.ban4TextBox{
+    height: 400px;
+    width: 17%;
+    /* background-color: aqua; */
+    padding-top: 20px;
+}
+
+.ban4TextBox p{
+    font-size: 0.85rem;
+    font-family: cursive;
+}
+
+.ban4Div4{
+    height: 100px;
+    width: 87%;
+    /* background-color: pink; */
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.ban4Div4 button{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 160px;
+    height: 40px;
+    /* padding-left: 1.5rem; */
+}
+
+.ban4Circle{
+    height: 36px;
+    width: 36px;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 50%;
+    position: absolute;
+    right: 295px;
+    display: none;
+}
+
+
+/* banner 5 starts here---------------------------------------------------------------------- */
+
+
+.banner5{
+    height: 1280px;
+    /* background-color: aqua; */
+    padding: 80px 1.5rem 80px 1.5rem;
+}
+
+.banner5-box1{
+    height: fit-content;
+    width: 100%;
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+
+.banner5-box2{
+    height: 1000px;
+    /* background-color: rgb(68, 0, 255); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ban5Text1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ban5Add1{
+    height: 25.5rem;
+    width: 270px;
+    background-color: rgba(128, 128, 128, 0.247);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 1.5rem;
+}
+
+.imgCont5{
+    height: 50%;
+    width: 90%;
+}
+
+.imgCont5 img{
+    border-radius: 10px;
+}
+
+.type5{
+    height: 20px;
+    width: 100px;
+    background-color: rgba(255, 0, 0, 0.281);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typePrice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ban5Search1 button{
+    background-color: black;
+    height: 1.5rem;
+    width: 11.5rem;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.banner6{
+    height: 1100px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ban6Bg{
+    width: 100%;
+    height: 900px;
+    /* background-color: chartreuse; */
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ban6Label{
+    height: 150px;
+    width: 28%;
+    /* background-color: red; */
+    margin-top: -820px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.ban6Box1{
+    /* background-color: rgba(0, 0, 0, 0.541); */
+    height: 70%;
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mapBox{
+    width: 600px;
+    height: 600px;
+    /* background-color: green; */
+}
+
+.actualMap{
+    height: 450px;
+    width: 600px;
+    /* background-color: pink; */
+    filter: invert(100%);
+}
+
+.contInfo{
+    width: 600px;
+    height: 150px;
+    /* background-color: pink; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.contBox1{
+    width: 45%;
+    height: 65%;
+    /* background-color: red; */
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 3px;
+    /* border: 2px solid black; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.contBox2{
+    width: 45%;
+    height: 65%;
+    /* background-color: blue; */
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 3px;
+    /* border: 2px solid black; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.formBox{
+    height: 600px;
+    width: 520px;
+    background-color: white;
+    padding: 20px;
+    margin-left: 20px;
+    padding-top: 0%;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.stl{
+    width: 100%;
+    /* height: 1.5rem; */
+}
+
+.stl-El{
+    width: 90%;
+    height: 70%;
+
+    border-radius: 12px;
+    border: 4px solid transparent;
+    background-color: rgba(128, 128, 128, 0.226);
+}
+
+.sendButton{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 160px;
+    border-radius: 20px;
+}
+
+/* footer part---------------------------------------------------------------------------------- */
+
+.copyright{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    /* align-self: flex-end; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (width <= 1200px)
+{
+    /* nav bar ------------------------------------------------------------------------------------- */
+
+    .navBox{
+        margin-left: 100px;
+    }
+
+    .nav-bar{
+        padding-left: 50px;
+    }
+
+    /* .banner2------------------------------------------------------------------------------------------------ */
+
+    .imgBox1{
+        display: none;
+    }
+    .imgBox2{
+        display: none;
+    }
+    .banner2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* .banner3----------------------------------------------------- */
+
+
+    /* banner 4----------------------------------------------------------------------- */
+
+    .ban4Heading p{
+        padding-left: 55px;
+    }
+
+    .ban4Div2{
+        margin-left: 70px;
+        margin-right: 40px;
+    }
+
+    .ban4Circle {
+        height: 38px;
+        width: 38px;
+        position: absolute;
+        right: 545px;
+    }
+
+    .ban4Div4 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ban4Circle {
+        display: none;
+    }
+
+    .ban4Div4 button {
+        padding: 0%;
+    }
+    
+    /* banner 5 starts here----------------------------------------------------------------------------------- */
+
+    .banner5-box2{
+        height: 100%;
+    }
+
+    .banner5{
+        height: fit-content;
+    }
+    
+}
+
+
+
+@media screen and (width<= 900px)
+{
+    /* .nav-bar------------------------------------------------------------------------------------------- */
+    
+    .nav-bar{
+        justify-content: space-between;
+        padding: 0 12px 0 20px;
+    }
+    
+    .dropDown{
+        display: block;
+        width: 11rem;
+        height: 2em;
+        margin: 1rem;
+    }
+
+    .menu{
+        left: 55%;
+        width: 130%;
+    }
+
+    .navBox{
+        display: none;
+    }
+
+/* .banner2 starts here---------------------------------------------------------------------------------- */
+
+    .imgBox1{
+        display: none;
+    }
+    .imgBox2{
+        display: none;
+    }
+    .banner2{
+        height: 60rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .banner2-box{
+        height: auto;
+        width: 87%;
+        padding: 20px 5px 15px 5px;
+
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .boxBox1{
+        height: 4em;
+        width: 9.5em;
+
+    }
+
+    .boxBox2{
+        height: 4em;
+        width: 9.5em;
+        margin-top: 0px;
+
+    }
+
+    .boxBox3{
+        height: 4em;
+        width: 9em;
+
+    }
+
+    .boxBox4{
+        height: 4em;
+        width: 9em;
+
+    }
+
+    .midText{
+        height: 27.25rem;
+    }
+
+    /* .midText{
+        margin-top: 30rem;
+        margin-bottom: 5rem;
+        margin-left: 0;
+    } */
+
+/* .banner3 starts here---------------------------------------------------------------------------------------- */
+
+    .afterText{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* margin-top: 4rem; */
+        height: 8.5rem;
+        width: auto;
+    }
+
+    .circle{
+        display: none;
+    }
+
+    .banner3{
+        height: 40rem;
+    }
+
+    .banner3-box1{
+        display: none;
+    }
+
+    .video-bg{
+        height: 650px;
+    }
+
+    .video-text1{
+        height: 12rem;
+    }
+
+    .video-text1 .bold1{
+        color: black;
+        font-size: 2.3rem;
+    }
+
+    .actualVid{
+        min-height: 150px;
+        width: 90%;
+    }
+
+    /* banner 4----------------------------------------------------------------------------------- */
+
+    .banner4{
+        height: 700px;
+    }
+    .ban4ImgBox{
+        display: none;
+    }
+
+    .banDivBox1{
+        height: 300px;
+        width: 70%;
+
+        position: relative;
+    }
+
+    .ban4TextBox p{
+        display: none;
+    }
+
+    .ban4Circle{
+        display: none;
+    }
+
+    .ban4TextBox {
+        height: 280px;
+        width: 8%;
+        border-radius: 5px;
+        background-color: rgba(255, 107, 107, 0.281);
+        /* padding-top: 20px; */
+        writing-mode: vertical-rl;
+        display: flex;
+        justify-content: start;
+        align-items: baseline;
+        rotate: 180deg;
+        /* color: orange; */
+
+        position: absolute;
+        right: -5px;
+
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    .banner4Box1 {
+        margin-top: 15px;
+        padding: 0%;
+    }
+
+    .ban4Div2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .ban4TextBox{
+        padding-top: 50px;
+    }
+
+    .ban4Div4 {
+        height: 80px;
+        width: 100%;
+        /* background-color: pink; */
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .ban4Div4 button {
+        padding: 0;
+    }
+
+    .ban4Heading{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ban4Heading p {
+        padding-left: 0;
+    }
+
+
+    /* banner 5 starts here-------------------------------------------------------------------------- */
+
+    .banner5{
+        height: fit-content;
+    }
+    .ban5Add1 {
+        height: 21.5rem;
+        width: 200px;
+        margin: 0.5rem;
+    }
+
+    
+    .banner5-box2{
+        height: 100%;
+    }
+
+    .bold1 {
+        font-size: 2rem;
+    }
+
+    /* banner 6------------------------------------------------------------------------------------------------------- */
+    .banner6{
+        height: fit-content;
+    }
+
+    .iTag{
+        height: 250px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .actualMap{
+        height: 250px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapBox{
+        width: 100%;
+        height: 440px;
+    }
+
+    .ban6Box1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contInfo{
+        width: 100%;
+    }
+
+    .contBox1{
+        flex-direction: column;
+        height: 70%;
+    }
+
+    .contNum{
+        text-align: center;
+    }
+
+    .contBox2{
+        flex-direction: column;
+        height: 70%;
+    }
+
+    .emailInfo{
+        text-align: center;
+    }
+
+    .ban6Bg img{
+        display: none;
+    }
+
+    .ban6Label .bold1{
+        color: black;
+    }
+
+    .ban6Label{
+        width: 80%;
+    }
+
+    .ban6Bg{
+        height: 800px;
+    }
+
+    .formBox{
+        width: 90%;
+        height: 550px;
+    }
+
+    /* footer part-------------------------------------------------------------------- */
+
+    .copyright .shade{
+        font-size: 0.6rem;
+    }
+}
+
